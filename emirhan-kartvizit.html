@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emirhan Kayıkcı - Digital Kartvizit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            margin: 0 auto 20px;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 60px;
+            color: #6a11cb;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            padding: 30px;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            padding: 15px;
+            border-radius: 10px;
+            background: #f9f9f9;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .info-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+            color: white;
+            font-size: 20px;
+        }
+        
+        .info-content {
+            flex: 1;
+        }
+        
+        .info-content h3 {
+            color: #2575fc;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+        
+        .info-content p, .info-content a {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        
+        .info-content a:hover {
+            color: #6a11cb;
+            text-decoration: underline;
+        }
+        
+        .note {
+            background: #fff4e5;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border-left: 5px solid #ffa94d;
+            text-align: center;
+            font-weight: 500;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            padding: 20px;
+        }
+        
+        .social-link {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+        
+        .social-link:hover {
+            transform: scale(1.1);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #f5f5f5;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .profile-img {
+                width: 120px;
+                height: 120px;
+                font-size: 50px;
+            }
+            
+            .info-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .icon {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="profile-img">
+                <i class="fas fa-user"></i>
+            </div>
+            <h1>Emirhan Kayıkcı</h1>
+            <p>Digital Kartvizit</p>
+        </div>
+        
+        <div class="contact-info">
+            <div class="info-item">
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="info-content">
+                    <h3>Cep Telefonu</h3>
+                    <a href="tel:+905373973580">+90 537 397 35 80</a>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <div class="icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="info-content">
+                    <h3>Instagram</h3>
+                    <a href="https://instagram.com/ekayikci28" target="_blank">@ekayikci28</a>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <div class="icon">
+                    <i class="fas fa-at"></i>
+                </div>
+                <div class="info-content">
+                    <h3>Nsosyal</h3>
+                    <p>ekayikci28</p>
+                </div>
+            </div>
+            
+            <div class="note">
+                <p>İletişim için Signal uygulamasını kullanabilirsiniz</p>
+            </div>
+            
+            <div class="social-links">
+                <a href="tel:+905373973580" class="social-link">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="https://instagram.com/ekayikci28" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-signal"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 Emirhan Kayıkcı - Tüm Hakları Saklıdır</p>
+        </div>
+    </div>
+</body>
+</html>
